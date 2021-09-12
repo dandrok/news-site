@@ -10,6 +10,7 @@ const StyledButton = styled.button`
   transition: opacity 0.5s;
   transition: outline outline-offset 1s;
   transform: scale(1);
+  gap: 10px;
 
   :hover {
     opacity: 60%;

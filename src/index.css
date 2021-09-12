@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 
+font-family: 'Playfair Display', serif;
+ */
+
+input[type='text'] {
+  padding: 4px;
+
+  font-size: 16px;
+  border-radius: 4px;
+  border: solid #121221 2px;
+}
