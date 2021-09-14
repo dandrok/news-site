@@ -5,6 +5,15 @@ const Figure = styled.figure`
   /* background-color: violet; */
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
+  /* padding: 0;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: rgba(158, 158, 158, 0.177);
+    border-radius: 8px;
+    border: solid 1px rgba(158, 158, 158, 1);
+    padding: 1rem;
+  } */
 `
 
 const Title = styled.figcaption`
