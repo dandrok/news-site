@@ -30,17 +30,17 @@ const UnderTitle = styled.div`
 `
 const Text = styled.p``
 
-const Article = () => {
+const Article = ({ key, id, status, gender, image }) => {
   return (
     <>
       <Figure>
         <img
-          src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+          src={image}
           alt='placeholder img'
           style={{ width: '100%', borderRadius: '8px' }}
         />
         <Title>
-          <h2>News Title Lorem Impsum Dolor Sit Amet</h2>
+          <h2>{gender}</h2>
         </Title>
         <UnderTitle>
           <Text>1 Hour Ago</Text>

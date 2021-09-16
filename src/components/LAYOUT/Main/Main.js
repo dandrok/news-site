@@ -1,18 +1,19 @@
 import Container from '../../UI/Container'
 import Article from './Article'
 
-const Main = () => {
+const Main = ({ data }) => {
   return (
     <>
       <Container>
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+        {data.map((item) => {
+          ;<Article
+            key={item.id}
+            id={item.id}
+            status={item.status}
+            gender={item.gender}
+            image={item.image}
+          />
+        })}
       </Container>
     </>
   )
