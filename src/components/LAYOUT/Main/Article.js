@@ -30,7 +30,7 @@ const UnderTitle = styled.div`
 `
 const Text = styled.p``
 
-const Article = ({ key, id, status, gender, image }) => {
+const Article = ({ key, id, name, gender, image }) => {
   return (
     <>
       <Figure>
@@ -40,7 +40,7 @@ const Article = ({ key, id, status, gender, image }) => {
           style={{ width: '100%', borderRadius: '8px' }}
         />
         <Title>
-          <h2>{gender}</h2>
+          <h2>{name}</h2>
         </Title>
         <UnderTitle>
           <Text>1 Hour Ago</Text>

@@ -6,13 +6,15 @@ const Main = ({ data }) => {
     <>
       <Container>
         {data.map((item) => {
-          ;<Article
-            key={item.id}
-            id={item.id}
-            status={item.status}
-            gender={item.gender}
-            image={item.image}
-          />
+          return (
+            <Article
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              gender={item.gender}
+              image={item.image}
+            />
+          )
         })}
       </Container>
     </>

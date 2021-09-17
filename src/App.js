@@ -6,15 +6,15 @@ import Header from './components/LAYOUT/Header/Header'
 import Main from './components/LAYOUT/Main/Main'
 
 function App() {
-  const [data, setData] = useState([])
+  const [data, setData] = useState('')
   const [loading, setLoading] = useState('true')
-  const [error, setError] = useState(null)
+  const [error] = useState(null)
 
   useEffect(() => {
     getData()
   }, [])
 
-  const url = 'https://rickandmortyapi.com/api/character/?page=1'
+  const url = 'https://rickandmortyapi.com/api/character/?page=4'
 
   const getData = () => {
     axios
