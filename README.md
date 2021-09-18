@@ -1,5 +1,5 @@
 # news-site
 
-- react
+- react.js
 - axios
 - styled-components
